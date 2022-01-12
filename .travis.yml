@@ -9,3 +9,9 @@ before_install:
  
 script:
  - ./gradlew build
+  
+deploy:
+  provider: heroku
+  api_key: 
+    secure: $HEROKU_TOKEN
+  app: "bookstore-service"
