@@ -2,5 +2,10 @@ language: java
 jdk:
   - openjdk11
 
+sudo: required
+
+before_install:
+ - chmod +x gradlew
+ 
 script:
-  - ./gradlew check
+ - ./gradlew build
