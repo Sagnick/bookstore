@@ -12,7 +12,6 @@ script:
   
 deploy:
   provider: heroku
-  api_key: 
-    secure: $HEROKU_TOKEN
-    on: main
+  api_key: $HEROKU_TOKEN
+  on: main
   app: "bookstore-service"
