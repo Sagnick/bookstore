@@ -1,0 +1,2 @@
+com/demp/sb/bookstore/BookstoreApplicationTests.java
+ com.demp.sb.bookstore.BookstoreApplicationTests
