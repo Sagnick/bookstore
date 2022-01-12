@@ -1,6 +1,7 @@
 language: java
 jdk:
   - openjdk11
+  - gem install faraday -v 1.9.3
 
 sudo: required
 
