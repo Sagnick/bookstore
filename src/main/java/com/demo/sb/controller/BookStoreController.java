@@ -16,9 +16,11 @@ public class BookStoreController {
 
 	@GetMapping("/books")
 	public ResponseEntity<List<BookDTO>> getBooks() {
-		BookDTO book = BookDTO.builder().title("My First Book").build();
+		BookDTO book1 = BookDTO.builder().title("My First Book").build();
+		BookDTO book2 = BookDTO.builder().title("My Second Book").build();
 		List<BookDTO> books = new ArrayList<>();
-		books.add(book);
+		books.add(book1);
+		books.add(book2);
 		return ResponseEntity.ok(books);
 	}
 }
